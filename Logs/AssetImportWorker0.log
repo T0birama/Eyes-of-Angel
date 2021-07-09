@@ -90,3 +90,95 @@ Received Import Request.
 Start importing Assets/Musica/ES_Door Open French 3 - SFX Producer.mp3 using Guid(6be616468a3ba214ab56df0201cd4d1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01be0c8cb0900f7a4195c761679ca5b1') in 0.015786 seconds
   Import took 0.019661 seconds .
 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002523 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.41 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.926 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.46 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2506 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 119.4 MB.
+System memory in use after: 117.2 MB.
+
+Unloading 42 unused Assets to reduce memory usage. Loaded Objects now: 3018.
+Total: 4.211700 ms (FindLiveObjects: 0.578000 ms CreateObjectMapping: 0.208500 ms MarkObjects: 1.866200 ms  DeleteObjects: 1.556700 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002913 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.47 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.978 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.52 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2506 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 119.4 MB.
+System memory in use after: 117.2 MB.
+
+Unloading 42 unused Assets to reduce memory usage. Loaded Objects now: 3021.
+Total: 3.769400 ms (FindLiveObjects: 0.467900 ms CreateObjectMapping: 0.205900 ms MarkObjects: 1.747300 ms  DeleteObjects: 1.346800 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 588.597148 seconds.
+  path: Assets/Musica/ES_Door Slide Close - SFX Producer.mp3
+  artifactKey: Guid(3ae561474b6022e44b81c7bc800396e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Musica/ES_Door Slide Close - SFX Producer.mp3 using Guid(3ae561474b6022e44b81c7bc800396e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50e2a08612f95816b5d7a763825752df') in 0.065196 seconds
+  Import took 0.070316 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000267 seconds.
+  path: Assets/Musica/ES_Door Slide Open - SFX Producer.mp3
+  artifactKey: Guid(4f94b0106a1a30c42a2449d1f3718c69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Musica/ES_Door Slide Open - SFX Producer.mp3 using Guid(4f94b0106a1a30c42a2449d1f3718c69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '640ea49759e44f4fb6497a70b13f5ee1') in 0.013055 seconds
+  Import took 0.016935 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002347 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.53 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.939 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.43 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2506 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 119.5 MB.
+System memory in use after: 117.2 MB.
+
+Unloading 42 unused Assets to reduce memory usage. Loaded Objects now: 3025.
+Total: 3.241100 ms (FindLiveObjects: 0.251700 ms CreateObjectMapping: 0.115800 ms MarkObjects: 1.527000 ms  DeleteObjects: 1.345800 ms)
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
