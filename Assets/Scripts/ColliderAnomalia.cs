@@ -5,6 +5,7 @@ using UnityEngine;
 public class ColliderAnomalia : MonoBehaviour
 {
     public GameObject Anomalia;
+    public AudioSource SonidoAnomalia;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +23,7 @@ public class ColliderAnomalia : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             Anomalia.SetActive(true);
+            SonidoAnomalia.Play();
         }
     }
     private void OnTriggerExit(Collider other)
@@ -29,6 +31,7 @@ public class ColliderAnomalia : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             Anomalia.SetActive(false);
+            SonidoAnomalia.Stop();
         }
     }
 }
