@@ -3835,6 +3835,8 @@ PlayableDirector:
   m_SceneBindings:
   - key: {fileID: -5540831342764376316, guid: 75635ef9147c0dd4eb30cf91f38968ad, type: 2}
     value: {fileID: 1610260737}
+  - key: {fileID: -5633045542666433902, guid: 75635ef9147c0dd4eb30cf91f38968ad, type: 2}
+    value: {fileID: 0}
   m_ExposedReferences:
     m_References: []
 --- !u!1 &180547199
@@ -4958,7 +4960,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   abrirT: {fileID: 1395255424}
-  canvasVentanal: {fileID: 2133298608}
+  canvasVentanal: {fileID: 679427284}
   otroColliderVentanal: {fileID: 1080547389}
   abrir: 0
 --- !u!4 &240130971 stripped
@@ -8204,7 +8206,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 0.183
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -22395,7 +22397,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   abrirT: {fileID: 174230193}
-  canvasVentanal: {fileID: 679427284}
+  canvasVentanal: {fileID: 2133298608}
   otroColliderVentanal: {fileID: 239908062}
   abrir: 0
 --- !u!4 &1080547392
