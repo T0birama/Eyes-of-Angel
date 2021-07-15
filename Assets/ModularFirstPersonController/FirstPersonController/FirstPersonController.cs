@@ -24,7 +24,7 @@ public class FirstPersonController : MonoBehaviour
 
     public float fov = 60f;
     public bool invertCamera = false;
-    public bool cameraCanMove = true;
+    public bool cameraCanMove = false;
     public float mouseSensitivity = 2f;
     public float maxLookAngle = 50f;
 
@@ -55,12 +55,19 @@ public class FirstPersonController : MonoBehaviour
 
     #region Movement Variables
 
-    public bool playerCanMove = true;
+    public bool playerCanMove = false;
     public float walkSpeed = 5f;
     public float maxVelocityChange = 10f;
 
     // Internal Variables
     private bool isWalking = false;
+
+    IEnumerator CanMove()
+    {
+        yield return new  WaitForSeconds(3);
+        playerCanMove = true;
+        cameraCanMove = true;
+    }
 
     #region Sprint
 
@@ -147,6 +154,7 @@ public class FirstPersonController : MonoBehaviour
             sprintRemaining = sprintDuration;
             sprintCooldownReset = sprintCooldown;
         }
+        StartCoroutine(CanMove());
     }
 
     void Start()
