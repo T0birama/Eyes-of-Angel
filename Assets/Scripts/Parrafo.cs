@@ -26,7 +26,8 @@ public class Parrafo : MonoBehaviour
     {
         if(TextP.text == parrafos[index] )
         {
-            BotonContinue.SetActive(true);
+            
+
             BotonLeer.SetActive(false);
         }
     }
