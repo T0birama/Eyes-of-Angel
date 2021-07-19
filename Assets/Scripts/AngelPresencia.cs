@@ -30,7 +30,7 @@ public class AngelPresencia : MonoBehaviour
         if (other.CompareTag("Player"))
             timelineAngel.Play();
             canvaActive.SetActive(true);
-            Debug.Log("playyy");
+       
         StartCoroutine(CambioDeEscena());
 
             
@@ -41,7 +41,7 @@ public class AngelPresencia : MonoBehaviour
         if(other.CompareTag("Player"))
             timelineAngel.Stop();
         canvaActive.SetActive(false);
-        Debug.Log("stopppp");
+      
         StopCoroutine(CambioDeEscena());
     }
 
