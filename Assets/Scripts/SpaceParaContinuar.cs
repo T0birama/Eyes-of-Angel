@@ -5,6 +5,8 @@ using UnityEngine.Playables;
 
 public class SpaceParaContinuar : MonoBehaviour
 {
+    public GameObject Musica1;
+    public GameObject Musica2;
     public GameObject HistoriaTimeline;
     public PlayableDirector TimeLineCamaras;
     public GameObject CamarasyCanvas;
@@ -20,6 +22,8 @@ public class SpaceParaContinuar : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
+            Musica1.SetActive(false);
+            Musica2.SetActive(true);
             HistoriaTimeline.SetActive(false);
             CamarasyCanvas.SetActive(true);
             TimeLineCamaras.Play();

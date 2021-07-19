@@ -12,6 +12,9 @@ public class Parrafo : MonoBehaviour
     int index;
     public float velParrafos;
 
+    public GameObject imagen1;
+    public GameObject imagen2;
+
     public GameObject BotonContinue;
     public GameObject BotonLeer;
     
@@ -27,7 +30,7 @@ public class Parrafo : MonoBehaviour
         if(TextP.text == parrafos[index] )
         {
             
-
+            BotonContinue.SetActive(true);
             BotonLeer.SetActive(false);
         }
     }
@@ -56,7 +59,16 @@ public class Parrafo : MonoBehaviour
             TextP.text = "";
             BotonContinue.SetActive(false);
         }
-
+        if(index == 4)
+        {
+            Debug.Log("cambiar fondo");
+            imagen1.SetActive(false);
+            imagen2.SetActive(true);
+        }
+        if(index == 8)
+        {
+            imagen2.SetActive(false);
+        }
     }
 
     public void ActivarTexto()
