@@ -645,6 +645,10 @@ PlayableDirector:
   m_SceneBindings:
   - key: {fileID: 7401517581382504061, guid: 50a193516f376f34e9d0583e1a00b351, type: 2}
     value: {fileID: 1648924428}
+  - key: {fileID: -8355772674129455352, guid: 50a193516f376f34e9d0583e1a00b351, type: 2}
+    value: {fileID: 2080722283}
+  - key: {fileID: -2366110892087138948, guid: 50a193516f376f34e9d0583e1a00b351, type: 2}
+    value: {fileID: 1655449237}
   m_ExposedReferences:
     m_References: []
 --- !u!114 &960577714
@@ -1041,6 +1045,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1655449236}
   - component: {fileID: 1655449235}
+  - component: {fileID: 1655449237}
   m_Layer: 0
   m_Name: y2mate.com - Cold wind sound effect
   m_TagString: Untagged
@@ -1158,6 +1163,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1655449237
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1655449234}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &1880881255
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1225,6 +1249,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2080722282}
   - component: {fileID: 2080722281}
+  - component: {fileID: 2080722283}
   m_Layer: 0
   m_Name: y2mate.com - DaniSogen  Evening Rain
   m_TagString: Untagged
@@ -1342,3 +1367,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &2080722283
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2080722280}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

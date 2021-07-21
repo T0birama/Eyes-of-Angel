@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class InterruptorA : MonoBehaviour
 {
+    public AudioSource Switch;
     public GameObject Luz;
     public GameObject PuedeApretar;
     bool Activar;
@@ -26,6 +27,8 @@ public class InterruptorA : MonoBehaviour
                 gameObject.SetActive(false);
                 OtroInterruptor.SetActive(true);
                 PuedeApretar.SetActive(false);
+                Switch.Play();
+
             }
 
         }
