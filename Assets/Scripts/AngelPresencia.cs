@@ -6,9 +6,14 @@ using UnityEngine.SceneManagement;
 
 public class AngelPresencia : MonoBehaviour
 {
+    public GameObject PostAngel;
+    public GameObject Timelinegameover;
+    public GameObject PostGameover;
     public PlayableDirector timelineAngel;
+    public PlayableDirector TimelineGameOver;
     public GameObject canvaActive;
     public float TiempoDeCambio;
+    public float TiempoDependeDeGameover;
     
         
     // Start is called before the first frame update
@@ -27,29 +32,48 @@ public class AngelPresencia : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Mira"))
+        {
             timelineAngel.Play();
             canvaActive.SetActive(true);
-       
-        StartCoroutine(CambioDeEscena());
+            PostAngel.SetActive(true);
+
+            StartCoroutine(CambioDeEscena());
+        }
+            
 
             
     }
 
     private void OnTriggerExit(Collider other)
     {
-        if(other.CompareTag("Player"))
+        if (other.CompareTag("Mira"))
+        {
             timelineAngel.Stop();
-        canvaActive.SetActive(false);
-      
-        StopCoroutine(CambioDeEscena());
+            canvaActive.SetActive(false);
+            PostAngel.SetActive(false);
+
+            StopCoroutine(CambioDeEscena());
+        }
     }
+ 
 
     IEnumerator CambioDeEscena()
     {
         yield return new WaitForSeconds(TiempoDeCambio);
-        SceneManager.LoadScene ("GameOver");
+        Timelinegameover.SetActive(true);
+        PostGameover.SetActive(true); 
+        TimelineGameOver.Play();
+        StartCoroutine(GameOverTiempo());
+        
             
     }
+
+    IEnumerator GameOverTiempo()
+    {
+        yield return new WaitForSeconds(TiempoDependeDeGameover);
+        SceneManager.LoadScene("GameOver");
+    }
+
  
 }

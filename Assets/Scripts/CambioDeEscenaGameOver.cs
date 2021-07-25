@@ -5,10 +5,18 @@ using UnityEngine.SceneManagement;
 
 public class CambioDeEscenaGameOver : MonoBehaviour
 {
-    
-    public void LoadScene(string scenename)
+
+    private void Update()
     {
-        SceneManager.LoadScene(scenename);
+        if (Input.GetKeyDown(KeyCode.X))
+        {
+            SceneManager.LoadScene("Game");
+        }
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            SceneManager.LoadScene("Inicio");
+        }
     }
-   
+
 }

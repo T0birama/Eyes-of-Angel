@@ -61,6 +61,7 @@ public class CambioDeDia : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             Canvas.SetActive(false);
+            activar = false;
         }
     }
 

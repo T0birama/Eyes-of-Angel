@@ -9,9 +9,15 @@ EditorBuildSettings:
     path: 
     guid: 00000000000000000000000000000000
   - enabled: 1
+    path: Assets/Scenes/Inicio.unity
+    guid: 2cd3e924162aadd4384b016fb76bd16c
+  - enabled: 1
     path: Assets/Scenes/Cinematica.unity
     guid: 5957cbf0f3036014f961b04946ea2b96
   - enabled: 1
     path: Assets/Scenes/Game.unity
     guid: ee598dc367a2a384d9a577cf330c7845
+  - enabled: 1
+    path: Assets/Scenes/GameOver.unity
+    guid: fdb5807491720874786ff609b35c63a2
   m_configObjects: {}

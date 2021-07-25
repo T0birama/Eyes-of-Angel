@@ -20,13 +20,13 @@ public class PresenciaAudioAD : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Mira"))
             presenciaAudio.Play();
     }
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Mira"))
             presenciaAudio.Stop();
     }
 }

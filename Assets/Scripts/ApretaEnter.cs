@@ -24,6 +24,12 @@ public class ApretaEnter : MonoBehaviour
             Faded.Play();
             StartCoroutine(Escena());
         }
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+            print("saliendo");
+        }
     }
 
     IEnumerator Escena()
