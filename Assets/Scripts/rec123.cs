@@ -6,6 +6,9 @@ public class rec123 : MonoBehaviour
 {
     public GameObject recuerdos;
     public GameObject Jaulas;
+    public GameObject x;
+    public GameObject objetoCanvas;
+    public GameObject OtroobjetoCanvas;
     public GameObject canvasPuedoAgarrarlo;
     private bool PuedoAgarrarlo;
     // Start is called before the first frame update
@@ -24,6 +27,10 @@ public class rec123 : MonoBehaviour
                 recuerdos.SetActive(false);
                 canvasPuedoAgarrarlo.SetActive(false);
                 Jaulas.SetActive(false);
+                x.SetActive(true);
+                objetoCanvas.SetActive(false);
+                OtroobjetoCanvas.SetActive(true);
+
             }
         }
     }

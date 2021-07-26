@@ -13,6 +13,9 @@ public class CambioDeDia : MonoBehaviour
     public GameObject Canvas;
     public GameObject Tiempo; 
     public GameObject Timer;
+    public GameObject ouijaC;
+    public GameObject ojoC;
+    public GameObject oraculoC;
  
   
 
@@ -82,7 +85,9 @@ public class CambioDeDia : MonoBehaviour
         
         Tiempo.SetActive(true);
         Timer.SetActive(true);
-
+        ouijaC.SetActive(true);
+        ojoC.SetActive(true);
+        oraculoC.SetActive(true);
         gameObject.SetActive(false);
         Destroy(Canvas);
     }
