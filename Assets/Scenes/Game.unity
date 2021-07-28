@@ -51501,7 +51501,7 @@ MonoBehaviour:
   timelineAngel: {fileID: 1970181366}
   TimelineGameOver: {fileID: 2051736924}
   canvaActive: {fileID: 707391159}
-  TiempoDeCambio: 70
+  TiempoDeCambio: 7
   TiempoDependeDeGameover: 3
 --- !u!320 &1970181366
 PlayableDirector:

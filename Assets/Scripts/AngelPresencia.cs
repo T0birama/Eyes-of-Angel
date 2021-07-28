@@ -38,7 +38,7 @@ public class AngelPresencia : MonoBehaviour
             canvaActive.SetActive(true);
             PostAngel.SetActive(true);
 
-            StartCoroutine(CambioDeEscena());
+            StartCoroutine("CambioDeEscena");
         }
             
 
@@ -53,7 +53,7 @@ public class AngelPresencia : MonoBehaviour
             canvaActive.SetActive(false);
             PostAngel.SetActive(false);
 
-            StopCoroutine(CambioDeEscena());
+            StopCoroutine("CambioDeEscena");
         }
     }
  
