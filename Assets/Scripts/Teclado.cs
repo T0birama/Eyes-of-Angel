@@ -6,7 +6,7 @@ public class Teclado : MonoBehaviour
 {
     public GameObject PantallaDiscord;
     public GameObject PuedeApretar;
-    public GameObject Pantalla1;
+    
     private bool Activar;
     // Start is called before the first frame update
     void Start()
@@ -22,7 +22,7 @@ public class Teclado : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.E))
             {
                 PantallaDiscord.SetActive(true);
-                Pantalla1.SetActive(false);
+                
                 PuedeApretar.SetActive(false);
                 gameObject.SetActive(false);
                 

@@ -5,7 +5,8 @@ using UnityEngine;
 public class ParaAudio : MonoBehaviour
 {
     public GameObject audio1;
-    public GameObject audio2;
+    bool PuedeActivar;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -15,24 +16,32 @@ public class ParaAudio : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(PuedeActivar == true)
+        {
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                audio1.SetActive(true);
+            }
+        }
         
     }
-
-
-
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
-        if (collision.gameObject.CompareTag("casa"))
+        if (other.CompareTag("Mira"))
         {
-            audio1.SetActive(true);
-            audio2.SetActive(false);
-        }
-
-        if (collision.gameObject.CompareTag("Terreno"))
-        {
-            audio1.SetActive(false);
-            audio2.SetActive(true);
+            PuedeActivar = true;
         }
     }
-   
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Mira"))
+        {
+            PuedeActivar = false;
+        }
+    }
+
+
+
+
 }

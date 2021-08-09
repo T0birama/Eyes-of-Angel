@@ -13,6 +13,9 @@ public class PCAP : MonoBehaviour
     public GameObject PuedeApretar;
     public GameObject Pantalla1;
     public GameObject Otrocollider;
+    public GameObject PantallaDiscord;
+    public GameObject colliderTeclado;
+    public GameObject PantallaDiscord2;
 
     private bool Activarse;
     // Start is called before the first frame update
@@ -63,8 +66,12 @@ public class PCAP : MonoBehaviour
     {
         yield return new WaitForSeconds(2);
         Pantalla1.SetActive(false);
+        PantallaDiscord.SetActive(false);
+        PantallaDiscord2.SetActive(false);
+        colliderTeclado.SetActive(false);
         gameObject.SetActive(false);
         Otrocollider.SetActive(true);
+
 
     }
 }
