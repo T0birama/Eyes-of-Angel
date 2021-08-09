@@ -13,7 +13,7 @@ public class PC : MonoBehaviour
     public GameObject PuedeApretar;
     public GameObject Pantalla1;
     public GameObject Otrocollider;
-    
+    public GameObject ColliderTeclado;
     private bool Activarse;
     // Start is called before the first frame update
     void Start()
@@ -65,6 +65,7 @@ public class PC : MonoBehaviour
         Pantalla1.SetActive(true);
         gameObject.SetActive(false);
         Otrocollider.SetActive(true);
+        ColliderTeclado.SetActive(true);
 
     }
 }
