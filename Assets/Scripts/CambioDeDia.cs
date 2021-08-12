@@ -16,6 +16,7 @@ public class CambioDeDia : MonoBehaviour
     public GameObject ouijaC;
     public GameObject ojoC;
     public GameObject oraculoC;
+    public GameObject Encuentralos;
  
   
 
@@ -40,7 +41,11 @@ public class CambioDeDia : MonoBehaviour
             desactivarObj.SetActive(false);
             ActivaoDesactivaObj.SetActive(true);
             CambiarDia();
+            Destroy(Canvas);
+            Encuentralos.SetActive(true);
             StartCoroutine(desactivarCanvas());
+
+            StartCoroutine(Encuentra());
           
             
 
@@ -89,6 +94,13 @@ public class CambioDeDia : MonoBehaviour
         ojoC.SetActive(true);
         oraculoC.SetActive(true);
         gameObject.SetActive(false);
-        Destroy(Canvas);
+        
+       
+    }
+
+    IEnumerator Encuentra()
+    {
+        yield return new WaitForSeconds(3);
+        Encuentralos.SetActive(false);
     }
 }
